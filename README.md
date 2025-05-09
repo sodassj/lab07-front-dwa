@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Lab08 - Frontend con React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es el frontend del Lab08, desarrollado con React. Puede ejecutarse localmente o desplegarse en [Render](https://render.com) sin problemas.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Pasos para desplegar el frontend
 
-### `npm start`
+### 1. Clonar el repositorio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+git clone https://github.com/ThiagoPharari/lab07-front-dwa.git
+cd lab07-front-dwa
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 2. Instalar dependencias
 
-### `npm test`
+Ejecuta el siguiente comando para instalar todas las dependencias necesarias:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm install
+```
 
-### `npm run build`
+### 3. Configurar variables de entorno
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Crea un archivo `.env` en la raíz del proyecto y define la siguiente variable:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```env
+REACT_APP_BACK_URL=http://localhost:4000
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> ⚠️ Si estás desplegando en **Render**, reemplaza el valor de `REACT_APP_BACK_URL` por la URL pública de tu backend desplegado, por ejemplo:
 
-### `npm run eject`
+```env
+REACT_APP_BACK_URL=https://mi-backend.onrender.com
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. Iniciar el servidor de desarrollo
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para ejecutar la aplicación localmente o cuando se despliegue:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## ✅ Notas
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Asegúrate de que la variable `REACT_APP_BACK_URL` apunte correctamente al backend, ya sea en local o en producción.
+* Render detecta el uso de React y realiza el build automático si el repositorio está bien configurado.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Tu frontend ahora estará listo para conectarse al backend con JWT y funcionar correctamente en local o en la nube.

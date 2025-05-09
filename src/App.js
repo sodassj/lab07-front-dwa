@@ -8,7 +8,6 @@ import AdminDashboard from "./pages/AdminDashboard";
 import Dashboard from "./pages/Dashboard";
 import UserDashboard from "./pages/UserDashboard";
 import ModeratorDashboard from "./pages/ModeratorDashboard";
-// import NotFound from "./pages/NotFound"; // Opcional
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/user/dashboard" element={<UserDashboard />} />
           <Route path="/moderator/dashboard" element={<ModeratorDashboard />} />  
-          {/* <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </div>
     </Router>

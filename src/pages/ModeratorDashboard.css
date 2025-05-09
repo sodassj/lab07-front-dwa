@@ -1,0 +1,55 @@
+/* src/pages/ModeratorDashboard.css */
+.moderator-dashboard {
+    background-color: #f8f9fa;
+    min-height: calc(100vh - 56px); /* Ajuste para altura completa menos navbar */
+  }
+  
+  .card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  .card-header {
+    font-weight: 600;
+    border-bottom: none;
+  }
+  
+  .list-group-item {
+    padding: 0.75rem 1.25rem;
+    transition: background-color 0.2s;
+  }
+  
+  .list-group-item:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .btn-outline-primary {
+    transition: all 0.3s;
+  }
+  
+  .btn-outline-primary:hover {
+    background-color: #0d6efd;
+    color: white;
+  }
+  
+  .table th {
+    border-top: none;
+    font-weight: 600;
+    color: #6c757d;
+  }
+  
+  .badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      margin-bottom: 1.5rem;
+    }
+  }
